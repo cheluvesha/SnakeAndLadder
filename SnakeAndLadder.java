@@ -11,6 +11,7 @@ class SnakeAndLadder {
 
 	}
 	
+	// roll a die through random number generation
 	private static int rollADie() {
 
 		Random random = new Random();
@@ -23,7 +24,7 @@ class SnakeAndLadder {
 	private static void getToExactWinPosition() {
 
 		Random random = new Random();
-		int win = 0;
+		int win = 0;// Position
 
 		// to repeat till 100th position
 
