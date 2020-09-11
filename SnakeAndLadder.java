@@ -3,7 +3,9 @@ import java.util.Random;
 class SnakeAndLadder {
 
 	final static int STEP = 3;
-	
+	final static int SNAKE = 2;
+	final static int NO_PLAY = 0;
+
 	// welcome to starting of the Game	
 	private static void welcomeToGame() {
 		
@@ -34,14 +36,14 @@ class SnakeAndLadder {
 			int moveDie = rollADie();
 				
 			// On the basis of Option Player Position will take place
-			if(option == 0) {
+			if(option == NO_PLAY) {
 				
 				System.out.println("Player its a foult so no changes to the current position \n Current position is: "+win);
 			
 			}
 			
 			// condition win greater than roll die value to avoid negative value
-			else if(option == 2 && win > moveDie) {
+			else if(option == SNAKE && win > moveDie) {
 				
 				System.out.println("oops!! Player you step on a snake so you will go back to "+STEP+"  step back");
 				win -= STEP;
