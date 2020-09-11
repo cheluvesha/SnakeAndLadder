@@ -5,12 +5,14 @@ class SnakeAndLadder {
 	final static int SNAKE = 2;
 	final static int NO_PLAY = 0;
 	final static int WIN_GOAL = 100;
+
 	// welcome to starting of the Game	
 	private static void welcomeToGame() {
 		
 		System.out.println("Player will Start from position 0");
 	
 	}
+
 	// roll a die through random number generation
 	private static int rollADie() {
 		
@@ -28,7 +30,7 @@ class SnakeAndLadder {
 		int option = random.nextInt(3);
 		int moveDie = rollADie();
 		System.out.println(" option choice: "+option);
-		int win = 0;
+		int win = 0;//position
 			
 		// On the basis of Option Player Position will take place
 		if(option == NO_PLAY) {
