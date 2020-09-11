@@ -11,6 +11,7 @@ class SnakeAndLadder {
 	
 	}
 	
+	// roll a die through random number generation
 	private static int rollADie() { 
 		
 		Random random = new Random();
@@ -20,10 +21,11 @@ class SnakeAndLadder {
 	
 	}
 	
+	// method to repeat till its reach 100
 	private static void repeatTillPlayerReachGoal() {
 		
 		Random random = new Random();
-		int win = 0;
+		int win = 0;// position
 		
 		// to repeat till 100th position
 		while( win < 100 ) {
