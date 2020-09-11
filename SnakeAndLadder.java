@@ -52,23 +52,28 @@ class SnakeAndLadder {
 				win += moveDie;
 				
 				//to stop player exact in 100	
-				if( win > 100 )
+				if( win > 100 ) {
 
 					win -= moveDie;
 					
-				else
+				}
+				
+				else {
 
 					System.out.println("Congrats!! Player you advanced to: "+ moveDie +" positions");
 					System.out.println(" Player currently you ended at: "+ win +" position");
-
+					
+				}
 
 			}
 
 			// condition to check whether its at 100
-			if( win == 100 )
+			if( win == 100 ) {
 
 				System.out.println("Congrats you have Reached 100th Position"); 
-
+			
+			}
+			
 		}
 	} 
 
