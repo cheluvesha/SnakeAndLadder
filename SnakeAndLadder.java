@@ -49,6 +49,7 @@ class SnakeAndLadder {
 
 			else {
 				win += moveDie;
+				
 				//to stop player exact in 100	
 				if( win > 100 )
 
