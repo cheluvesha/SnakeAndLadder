@@ -4,7 +4,7 @@ class SnakeAndLadder {
 
 	final static int SNAKE = 2;
 	final static int NO_PLAY = 0;
-
+	final static int WIN_GOAL = 100;
 	// welcome to starting of the Game	
 	private static void welcomeToGame() {
 		
@@ -27,7 +27,9 @@ class SnakeAndLadder {
 		Random random = new Random();
 		int option = random.nextInt(3);
 		int moveDie = rollADie();
-		System.out.println(" option choice"+option);			
+		System.out.println(" option choice: "+option);
+		int win = 0;
+			
 		// On the basis of Option Player Position will take place
 		if(option == NO_PLAY) {
 			
@@ -37,12 +39,25 @@ class SnakeAndLadder {
 		
 		else if(option == SNAKE) {
 			
-			System.out.println("oops!! Player you step on a snake so you will go back to 3 step back");
-		
+			System.out.println("oops!! Player you step on a snake so you will go back to "+moveDie+" step back");
+			
+			// to avoid negative position 
+			if(win > moveDie) {
+
+				win -= moveDie;
+			
+			}
+			else {
+				
+				win = 0;
+
+			}
+
 		}
 		
 		else {
 			
+			win += moveDie;
 			System.out.println("Congrats!! Player you advanced to: "+ moveDie +" positions");
 		
 		}
