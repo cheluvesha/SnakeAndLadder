@@ -27,7 +27,7 @@ class SnakeAndLadder {
 		Random random = new Random();
 		int option = random.nextInt(3);
 		int moveDie = rollADie();
-			
+		System.out.println(" option choice"+option);			
 		// On the basis of Option Player Position will take place
 		if(option == NO_PLAY) {
 			
