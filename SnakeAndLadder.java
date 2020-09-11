@@ -8,6 +8,7 @@ class SnakeAndLadder {
 	private static void welcomeToGame() {
 
 		System.out.println("Player will Start from position 0");
+		System.out.println("<------------------------------------------------------->");
 
 	}
 	
@@ -24,7 +25,7 @@ class SnakeAndLadder {
 
 		Random random = new Random();
 		int win = 0;
-
+		int noOfTimeDieRolled = 0;
 		// to repeat till 100th position
 
 		while( win < 100 ) {
@@ -36,7 +37,8 @@ class SnakeAndLadder {
 			if(option == 0) {
 
 				System.out.println("Player its a foult so no changes to the current position \n Current position is: "+win);
-
+				noOfTimeDieRolled++;
+			
 			}
 
 			// condition win greater than roll die value to avoid negative value
@@ -44,6 +46,8 @@ class SnakeAndLadder {
 
 				System.out.println("oops!! Player you step on a snake so you will go back to "+STEP+"  step back");
 				win -= STEP;
+				noOfTimeDieRolled++;
+				System.out.println("Current position is: "+win);
 
 			}
 
@@ -51,24 +55,34 @@ class SnakeAndLadder {
 				win += moveDie;
 				
 				//to stop player exact in 100	
-				if( win > 100 )
+				if( win > 100 ) {
 
 					win -= moveDie;
+					noOfTimeDieRolled++;
 					
-				else
+				}
+
+				else {
 
 					System.out.println("Congrats!! Player you advanced to: "+ moveDie +" positions");
 					System.out.println(" Player currently you ended at: "+ win +" position");
-
-
+					noOfTimeDieRolled++;
+				
+				}	
 			}
 
 			// condition to check whether its at 100
-			if( win == 100 )
+			if( win == 100 ) {
 
 				System.out.println("Congrats you have Reached 100th Position"); 
+			
+			}
 
 		}
+
+		System.out.println("<------------------------------------------------------->");		
+		System.out.println("The Number of times Dice rolled is : "+noOfTimeDieRolled);
+
 	} 
 
 	public static void main(String args[]) {
