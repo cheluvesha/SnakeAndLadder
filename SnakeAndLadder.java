@@ -8,7 +8,7 @@ class SnakeAndLadder {
 		System.out.println("Player will Start from position 0");
 	
 	}
-	
+	// roll a die through random number generation
 	private static int rollADie() {
 		
 		Random random = new Random();
@@ -18,6 +18,7 @@ class SnakeAndLadder {
 		
 	}
 	
+	//method to check no play, ladder and snake
 	private static void checkNoplayLadderSnake() {
 		
 		Random random = new Random();
