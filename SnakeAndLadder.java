@@ -20,7 +20,7 @@ class SnakeAndLadder {
 
 	}
 	
-	private static void checkNoplayLadderSnake() {
+	private static void getToExactWinPosition() {
 
 		Random random = new Random();
 		int win = 0;
@@ -74,7 +74,7 @@ class SnakeAndLadder {
 	public static void main(String args[]) {
 
 		welcomeToGame();
-	 	checkNoplayLadderSnake();	
+	 	getToExactWinPosition();	
 
 	}
 }
