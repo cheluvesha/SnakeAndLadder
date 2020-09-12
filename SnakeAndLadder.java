@@ -78,7 +78,7 @@ class SnakeAndLadder {
 				if( win > WIN_GOAL ) {
 					
 					win -= moveDie;
-					System.out.println(" Player currently you ended at in: "+ win +" position please get a lesser value from the dice");
+					System.out.println("Sorry Player "+moveDie+" value will not reflect on current position please get less than or "+(WIN_GOAL - win)+" steps");
 				
 				}
 					
