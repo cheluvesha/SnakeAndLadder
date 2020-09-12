@@ -69,7 +69,7 @@ class SnakeAndLadder {
 				if( win > WIN_GOAL ) {
 					
 					win -= moveDie;
-					System.out.println("Sorry Player"+moveDie+" value will not reflect on your position because you need to get less than or "+(WIN_GOAL - win)+"Steps");
+					System.out.println("Sorry Player "+moveDie+" value will not reflect on your position because you need to get less than or "+(WIN_GOAL - win)+"Steps");
 				
 				}
 				
