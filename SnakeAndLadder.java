@@ -2,9 +2,9 @@
 import java.util.Random;
 class SnakeAndLadder {
 
-	final static int SNAKE = 2;
-	final static int NO_PLAY = 0;
-	final static int WIN_GOAL = 100;
+	static final int SNAKE = 2;
+	static final int NO_PLAY = 0;
+	static final int WIN_GOAL = 100;
 
 	// welcome to starting of the Game	
 	private static void welcomeToGame() {
