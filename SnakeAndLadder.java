@@ -13,18 +13,18 @@ class SnakeAndLadder {
         static final int NO_PLAY = 0;
         static final int WIN_GOAL = 100;
 	// welcome to starting of the Game
-	public static void welcomeToGame() {
+	private static void welcomeToGame() {
 		System.out.println("Player 1 Starts from 0");
 		System.out.println("Player 2 Starts from 0");
 		System.out.println("<----------------------------------------------------->");
 	}
 	//to get random number 1 to 6
-	public static int rollADie() {
+	private static int rollADie() {
 		int randomValue = random.nextInt(6)+1;
 		return randomValue;		
 	}
 	//to get option 0, 1, 2 or 3
-	public static int getOption() {		
+	private static int getOption() {		
 		int optionValue = random.nextInt(4);
 		return optionValue;		
 	}
